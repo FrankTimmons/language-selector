@@ -1,8 +1,7 @@
 $(document).ready(function() {
   $("#button1").click(function() {
     // $(".arrowRight").toggle();
-    $( ".arrowRight" ).toggle().animate({ "left": "+=450px" }, "slow" );
-    $( ".arrowRight" ).delay(5000).toggle();
+    $( ".arrowRight" ).show().animate({ "left": "+=350px" }, "slow",).animate({ "left": "-=350px" }, "slow", function(){ $(this).hide() });
   });
   $("form#languageSelector").submit(function(event) {
     event.preventDefault();
@@ -40,14 +39,17 @@ $(document).ready(function() {
     python = addAnswer(python, q5);
     
     if(cSharp > python && cSharp > swift){
+      $("#button1").toggle().delay(1000).toggle();
       $("#cSharp").show();
       $("#python").hide();
       $("#swift").hide();
     }else if(swift > cSharp && swift > python){
+      $("#button1").hide().delay(1000).show();
       $("#swift").show();
       $("#python").hide();
       $("#cSharp").hide();
     }else if(python > cSharp && python > swift){
+      $("#button1").hide().delay(1000).show();
       $("#python").show();
       $("#cSharp").hide();
       $("#swift").hide();

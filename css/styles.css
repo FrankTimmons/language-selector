@@ -53,11 +53,17 @@ h1 {
   text-align: center;
   border: dotted black;
   font-weight: bolder;
+  height: 40px;
 }
 
 .arrowRight {
+  margin: 20px;
   position: relative;
   text-align: right;
-  height: 15px;
+  height: 40px;
   display: none;
+}
+
+#buttonBox {
+  height: 150px;
 }
