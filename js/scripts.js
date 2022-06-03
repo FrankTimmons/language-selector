@@ -39,17 +39,14 @@ $(document).ready(function() {
     python = addAnswer(python, q5);
     
     if(cSharp > python && cSharp > swift){
-      $("#button1").toggle().delay(1000).toggle();
       $("#cSharp").show();
       $("#python").hide();
       $("#swift").hide();
     }else if(swift > cSharp && swift > python){
-      $("#button1").hide().delay(1000).show();
       $("#swift").show();
       $("#python").hide();
       $("#cSharp").hide();
     }else if(python > cSharp && python > swift){
-      $("#button1").hide().delay(1000).show();
       $("#python").show();
       $("#cSharp").hide();
       $("#swift").hide();
