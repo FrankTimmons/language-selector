@@ -34,22 +34,30 @@ $(document).ready(function() {
     console.log(python);
     console.log(cSharp);
 
-    if(cSharp === python && python === swift){
-      finalQuestion()
-    }else if(cSharp === swift){
-      finalQuestion("#pythonFinal")
-    }else if(swift === python){
-      finalQuestion("#cSharpFinal")
-    }else if(cSharp === python){
-      finalQuestion("#swiftFinal")
-    }
-
     if(cSharp > python && cSharp > swift){
       $("#cSharp").show();
+      $("#python").hide();
+      $("#swift").hide();
     }else if(swift > cSharp && swift > python){
       $("#swift").show();
+      $("#python").hide();
+      $("#cSharp").hide();
     }else if(python > cSharp && python > swift){
       $("#python").show();
+      $("#cSharp").hide();
+      $("#swift").hide();
+    }else if(cSharp === python && python === swift){
+      $("#finalQuestion").show();
+      finalQuestion()
+    }else if(cSharp === swift){
+      $("#finalQuestion").show();
+      finalQuestion("#pythonFinal")
+    }else if(swift === python){
+      $("#finalQuestion").show();
+      finalQuestion("#cSharpFinal")
+    }else if(cSharp === python){
+      $("#finalQuestion").show();
+      finalQuestion("#swiftFinal")
     }
   });
 });
@@ -59,23 +67,24 @@ function addAnswer(currentVal, answerVal) {
 }
 
 function finalQuestion(hideQuestion) {
-  $("#finalQuestion").show();
-      $(hideQuestion).hide();
-      $("form#languageSelector").submit(function(event) {
-        event.preventDefault();
-        const finalAnswer = $("input:radio[name=finalQuestion]:checked").val();
-        if(finalAnswer === "cSharp"){
-          $("#cSharp").show();
-          $("#python").hide();
-          $("#swift").hide();
-        }else if(finalAnswer === "python"){
-          $("#python").show();
-          $("#cSharp").hide();
-          $("#swift").hide();
-        }else if(finalAnswer === "swift"){
-          $("#swift").show();
-          $("#python").hide();
-          $("#cSharp").hide();
-        }
-      });
+  $(hideQuestion).hide();
+  $("form#languageSelector").submit(function(event) {
+    event.preventDefault();
+    const finalAnswer = $("input:radio[name=finalQuestion]:checked").val();
+
+    if(finalAnswer === "cSharp"){
+      $("#cSharp").show();
+      $("#python").hide();
+      $("#swift").hide();
+    }else if(finalAnswer === "python"){
+      $("#python").show();
+      $("#cSharp").hide();
+      $("#swift").hide();
+    }else if(finalAnswer === "swift"){
+      $("#swift").show();
+      $("#python").hide();
+      $("#cSharp").hide();
+    }
+    $("#finalQuestion").hide();
+  });
 }
