@@ -1,3 +1,11 @@
 #cSharp, #python, #swift {
   display: none;
 }
+form {
+  float: left;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
