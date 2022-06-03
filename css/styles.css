@@ -67,3 +67,10 @@ h1 {
 #buttonBox {
   height: 150px;
 }
+
+.finalImage {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
