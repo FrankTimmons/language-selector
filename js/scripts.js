@@ -34,25 +34,20 @@ $(document).ready(function() {
     console.log(python);
     console.log(cSharp);
 
-    if(cSharp === python){
-      
-      $("form#finalQuestion").submit(function(event) {
-        event.preventDefault();
-        const fq = $("input:radio[name=fq]:checked").val();
-
-      });
+    if(cSharp === python && python === swift){
+      finalQuestion()
     }else if(cSharp === swift){
-      //final question2.show;
+      finalQuestion("#pythonFinal")
     }else if(swift === python){
-      //final questtion3.show;
-    }else if(cSharp === python && python === swift){
-      //final questtion4.show;
+      finalQuestion("#cSharpFinal")
+    }else if(cSharp === python){
+      finalQuestion("#swiftFinal")
     }
 
     if(cSharp > python && cSharp > swift){
       $("#cSharp").show();
-    }else if(cSharp > python && cSharp > swift){
-      $("#cSharp").show();
+    }else if(swift > cSharp && swift > python){
+      $("#swift").show();
     }else if(python > cSharp && python > swift){
       $("#python").show();
     }
@@ -61,4 +56,26 @@ $(document).ready(function() {
 
 function addAnswer(currentVal, answerVal) {
   return currentVal + answerVal;
+}
+
+function finalQuestion(hideQuestion) {
+  $("#finalQuestion").show();
+      $(hideQuestion).hide();
+      $("form#languageSelector").submit(function(event) {
+        event.preventDefault();
+        const finalAnswer = $("input:radio[name=finalQuestion]:checked").val();
+        if(finalAnswer === "cSharp"){
+          $("#cSharp").show();
+          $("#python").hide();
+          $("#swift").hide();
+        }else if(finalAnswer === "python"){
+          $("#python").show();
+          $("#cSharp").hide();
+          $("#swift").hide();
+        }else if(finalAnswer === "swift"){
+          $("#swift").show();
+          $("#python").hide();
+          $("#cSharp").hide();
+        }
+      });
 }

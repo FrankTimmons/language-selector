@@ -1,6 +1,10 @@
 #cSharp, #python, #swift {
   display: none;
 }
+
+#finalQuestion {
+  display: none;
+}
 form {
   float: left;
 }
