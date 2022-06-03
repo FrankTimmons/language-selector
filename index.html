@@ -8,226 +8,197 @@
   <title>Language Selector</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Find out what programming language is right for you!</h1>
-    <form id="languageSelector">
-      <h2>Question 1:</h2>
-      <p>What's your favorite type of cheese?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q1" value="cSharp">
-          Sharp cheddar.
-        </label>
+  <div class="container">  
+    <div class="row">
+      <div class="col-12">
+        <h1>Find out what programming language is right for you!</h1>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q1" value="swift">
-          Any scrap of cheese I can get my hands on.
-        </label>
+      <div class="col-6">
+        <form id="languageSelector">
+          <h2>Question 1:</h2>
+          <p>What's your favorite type of cheese?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="cSharp">
+              Sharp cheddar.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="swift">
+              Any scrap of cheese I can get my hands on.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="python">
+              Mice.
+            </label>
+  
+          <h2>Question 2:</h2>
+          <p>What's your favorite fruit?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="swift">
+              Apples.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="cSharp">
+              Oranges.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="python">
+              Mice.
+            </label>
+          </div>
+  
+          <h2>Question 3:</h2>
+          <p>Do you like to wear suits?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="-2">
+              Absolutely not!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="-1">
+              No.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="0" checked>
+              Maybe..
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="1">
+              Yes.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="2">
+              Of course!
+            </label>
+          </div>
+  
+          <h2>Question 4:</h2>
+          <p>Do you like birds?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="-2">
+              Absolutely not!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="-1">
+              No.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="0" checked>
+              Maybe..
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="1">
+              Yes.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="2">
+              Of course!
+            </label>
+          </div>
+          <h2>Question 5:</h2>
+          <p>Do you like snakes?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="-2">
+              Absolutely not!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="-1">
+              No.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="0" checked>
+              Maybe..
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="1">
+              Yes.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="2">
+              Of course!
+            </label>
+          </div>
+          <button type="submit" class="btn" id="button1">Show me my results</button>
+        </form>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q1" value="python">
-          Mice.
-        </label>
-
-      <h2>Question 2:</h2>
-      <p>What's your favorite fruit?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q2" value="swift">
-          Apples.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q2" value="cSharp">
-          Oranges.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q2" value="python">
-          Mice.
-        </label>
-      </div>
-
-      <h2>Question 3:</h2>
-      <p>Do you like to wear suits?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q3" value="-2">
-          Absolutely not!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q3" value="-1">
-          No.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q3" value="0" checked>
-          Maybe..
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q3" value="1">
-          Yes.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q3" value="2">
-          Of course!
-        </label>
-      </div>
-
-      <h2>Question 4:</h2>
-      <p>Do you like birds?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q4" value="-2">
-          Absolutely not!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q4" value="-1">
-          No.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q4" value="0" checked>
-          Maybe..
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q4" value="1">
-          Yes.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q4" value="2">
-          Of course!
-        </label>
-      </div>
-
-      <h2>Question 5:</h2>
-      <p>Do you like snakes?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q5" value="-2">
-          Absolutely not!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q5" value="-1">
-          No.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q5" value="0" checked>
-          Maybe..
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q5" value="1">
-          Yes.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="q5" value="2">
-          Of course!
-        </label>
-      </div>
-
-      <!-- <div id="finalQuestion">
-        <h2>Final Question</h2>
-        <p>Looks like some options are equally appealing to you! Answer this final question to find the best option.</p>
-        <p>What's your ideal afternoon?</p>
-        <div class="radio" id="swiftFinal">
-          <label>
-            <input type="radio" name="finalQuestion" value="swift" id="finalQuestionBtn1">
-            Apples.
-          </label>
+      <div class="col-6">
+        <div id="swift">
+          <h2>Swift</h2>
+          <p></p>
         </div>
-        <div class="radio" id="cSharpFinal">
-          <label>
-            <input type="radio" name="finalQuestion" value="cSharp" id="finalQuestionBtn2">
-            Oranges.
-          </label>
+        <div id="python">
+          <h2>Python</h2>
+          <p></p>
         </div>
-        <div class="radio" id="pythonFinal">
-          <label>
-            <input type="radio" name="finalQuestion" value="python" id="finalQuestionBtn3">
-            Mice.
-          </label>
+        <div id="cSharp">
+          <h2>C#</h2>
+          <p></p>
         </div>
       </div>
-      <div id="swift">
-        <h2>Swift</h2>
-        <p></p>
+      <div class="col-6" id="finalQuestion">
+        <!-- <div id="finalQuestion"> -->
+          <form id="finalQuestionForm">
+            <h2>Final Question</h2>
+            <p>Looks like some options are equally appealing to you! Answer this final question to find the best option.</p>
+            <p>What's your ideal afternoon?</p>
+            <div class="radio" id="swiftFinal">
+              <label>
+                <input type="radio" name="finalQuestion" value="swift" id="finalQuestionBtn1">
+                Flying into a chimney.
+              </label>
+            </div>
+            <div class="radio" id="cSharpFinal">
+              <label>
+                <input type="radio" name="finalQuestion" value="cSharp" id="finalQuestionBtn2">
+                Playing tic tac toe.
+              </label>
+            </div>
+            <div class="radio" id="pythonFinal">
+              <label>
+                <input type="radio" name="finalQuestion" value="python" id="finalQuestionBtn3">
+                Slithering in the grass.
+              </label>
+            </div>
+            <button type="submit" class="btn" id="button2">Show me my results</button>
+          </form>
+        <!-- </div> -->
       </div>
-      <div id="python">
-        <h2>Python</h2>
-        <p></p>
-      </div>
-      <div id="cSharp">
-        <h2>C#</h2>
-        <p></p>
-      </div> -->
-
-      <button type="submit" class="btn" id="button1">Show me my results</button>
-    </form>
-    <div id="swift">
-      <h2>Swift</h2>
-      <p></p>
     </div>
-    <div id="python">
-      <h2>Python</h2>
-      <p></p>
-    </div>
-    <div id="cSharp">
-      <h2>C#</h2>
-      <p></p>
-    </div>
-  </div>
-  <div id="finalQuestion">
-    <form id="finalQuestionForm">
-      <h2>Final Question</h2>
-      <p>Looks like some options are equally appealing to you! Answer this final question to find the best option.</p>
-      <p>What's your ideal afternoon?</p>
-      <div class="radio" id="swiftFinal">
-        <label>
-          <input type="radio" name="finalQuestion" value="swift" id="finalQuestionBtn1">
-          Apples.
-        </label>
-      </div>
-      <div class="radio" id="cSharpFinal">
-        <label>
-          <input type="radio" name="finalQuestion" value="cSharp" id="finalQuestionBtn2">
-          Oranges.
-        </label>
-      </div>
-      <div class="radio" id="pythonFinal">
-        <label>
-          <input type="radio" name="finalQuestion" value="python" id="finalQuestionBtn3">
-          Mice.
-        </label>
-      </div>
-
-      <button type="submit" class="btn" id="button2">Show me my results</button>
-    </form>
-  </div>
+  </div> 
 </body>
 </html>

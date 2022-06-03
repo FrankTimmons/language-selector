@@ -33,10 +33,6 @@ $(document).ready(function() {
     cSharp = addAnswer(cSharp, q3);
     swift = addAnswer(swift, q4);
     python = addAnswer(python, q5);
-
-    console.log(swift);
-    console.log(python);
-    console.log(cSharp);
     
     if(cSharp > python && cSharp > swift){
       $("#cSharp").show();
