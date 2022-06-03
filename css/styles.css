@@ -69,8 +69,7 @@ h1 {
 }
 
 .finalImage {
-  display: block;
-  text-align: center;
-  width: 90%;
-  margin: auto;
+  float: left;
+  width: 30%;
+  margin-right: 10px;
 }
