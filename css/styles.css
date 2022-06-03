@@ -13,3 +13,47 @@ h1 {
   text-align: center;
   margin: 20px;
 }
+
+.col-6 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border: white;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 15px;
+}
+.col-6 .radio {
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.col-6 p {
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  height: auto;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.col-6 {
+  border: solid black;
+  background-color: lightblue;
+  margin: 2.5%;
+  box-sizing: border-box;
+  max-width: 45%;
+  padding: 10px;
+}
+
+.btn {
+  margin: 20px;
+  background-color: rgb(202, 255, 202);
+  text-align: center;
+  border: dotted black;
+  font-weight: bolder;
+}
