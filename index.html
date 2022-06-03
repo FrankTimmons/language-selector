@@ -151,25 +151,25 @@
         </label>
       </div>
 
-      <div id="finalQuestion">
+      <!-- <div id="finalQuestion">
         <h2>Final Question</h2>
         <p>Looks like some options are equally appealing to you! Answer this final question to find the best option.</p>
         <p>What's your ideal afternoon?</p>
         <div class="radio" id="swiftFinal">
           <label>
-            <input type="radio" name="finalQuestion" value="swift">
+            <input type="radio" name="finalQuestion" value="swift" id="finalQuestionBtn1">
             Apples.
           </label>
         </div>
         <div class="radio" id="cSharpFinal">
           <label>
-            <input type="radio" name="finalQuestion" value="cSharp">
+            <input type="radio" name="finalQuestion" value="cSharp" id="finalQuestionBtn2">
             Oranges.
           </label>
         </div>
         <div class="radio" id="pythonFinal">
           <label>
-            <input type="radio" name="finalQuestion" value="python">
+            <input type="radio" name="finalQuestion" value="python" id="finalQuestionBtn3">
             Mice.
           </label>
         </div>
@@ -185,9 +185,48 @@
       <div id="cSharp">
         <h2>C#</h2>
         <p></p>
+      </div> -->
+
+      <button type="submit" class="btn" id="button1">Show me my results</button>
+    </form>
+    <div id="swift">
+      <h2>Swift</h2>
+      <p></p>
+    </div>
+    <div id="python">
+      <h2>Python</h2>
+      <p></p>
+    </div>
+    <div id="cSharp">
+      <h2>C#</h2>
+      <p></p>
+    </div>
+  </div>
+  <div id="finalQuestion">
+    <form id="finalQuestionForm">
+      <h2>Final Question</h2>
+      <p>Looks like some options are equally appealing to you! Answer this final question to find the best option.</p>
+      <p>What's your ideal afternoon?</p>
+      <div class="radio" id="swiftFinal">
+        <label>
+          <input type="radio" name="finalQuestion" value="swift" id="finalQuestionBtn1">
+          Apples.
+        </label>
+      </div>
+      <div class="radio" id="cSharpFinal">
+        <label>
+          <input type="radio" name="finalQuestion" value="cSharp" id="finalQuestionBtn2">
+          Oranges.
+        </label>
+      </div>
+      <div class="radio" id="pythonFinal">
+        <label>
+          <input type="radio" name="finalQuestion" value="python" id="finalQuestionBtn3">
+          Mice.
+        </label>
       </div>
 
-      <button type="submit" class="btn">Show me my results</button>
+      <button type="submit" class="btn" id="button2">Show me my results</button>
     </form>
   </div>
 </body>

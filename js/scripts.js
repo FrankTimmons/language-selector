@@ -6,7 +6,11 @@ $(document).ready(function() {
     const q3 = parseInt($("input:radio[name=q3]:checked").val());
     const q4 = parseInt($("input:radio[name=q4]:checked").val());
     const q5 = parseInt($("input:radio[name=q5]:checked").val());
-    
+
+    $("#swift").hide();
+    $("#python").hide();
+    $("#cSharp").hide();
+
     let cSharp = 0;
     let swift = 0;
     let python = 0;
@@ -33,7 +37,7 @@ $(document).ready(function() {
     console.log(swift);
     console.log(python);
     console.log(cSharp);
-
+    
     if(cSharp > python && cSharp > swift){
       $("#cSharp").show();
       $("#python").hide();
@@ -47,17 +51,21 @@ $(document).ready(function() {
       $("#cSharp").hide();
       $("#swift").hide();
     }else if(cSharp === python && python === swift){
+      $("#button1").hide();
       $("#finalQuestion").show();
       finalQuestion()
     }else if(cSharp === swift){
+      $("#button1").hide();
       $("#finalQuestion").show();
-      finalQuestion("#pythonFinal")
+      finalQuestion("#pythonFinal");
     }else if(swift === python){
+      $("#button1").hide();
       $("#finalQuestion").show();
-      finalQuestion("#cSharpFinal")
+      finalQuestion("#cSharpFinal");
     }else if(cSharp === python){
+      $("#button1").hide();
       $("#finalQuestion").show();
-      finalQuestion("#swiftFinal")
+      finalQuestion("#swiftFinal");
     }
   });
 });
@@ -67,10 +75,13 @@ function addAnswer(currentVal, answerVal) {
 }
 
 function finalQuestion(hideQuestion) {
+  $("#swiftFinal").show();
+  $("#pythonFinal").show();
+  $("#cSharpFinal").show();
   $(hideQuestion).hide();
-  $("form#languageSelector").submit(function(event) {
+  $("form#finalQuestionForm").submit(function(event) {
     event.preventDefault();
-    const finalAnswer = $("input:radio[name=finalQuestion]:checked").val();
+    let finalAnswer = $("input:radio[name=finalQuestion]:checked").val();
 
     if(finalAnswer === "cSharp"){
       $("#cSharp").show();
@@ -85,6 +96,15 @@ function finalQuestion(hideQuestion) {
       $("#python").hide();
       $("#cSharp").hide();
     }
+
+    const finalQuestionBtn1 = document.getElementById('finalQuestionBtn1');
+    finalQuestionBtn1.checked = false;
+    const finalQuestionBtn2 = document.getElementById('finalQuestionBtn2');
+    finalQuestionBtn2.checked = false;
+    const finalQuestionBtn3 = document.getElementById('finalQuestionBtn3');
+    finalQuestionBtn3.checked = false;
+
     $("#finalQuestion").hide();
+    $("#button1").show();
   });
 }
