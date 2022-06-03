@@ -19,7 +19,7 @@ This is a website that takes user input through radio buttons, and recommends yo
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
-* Open portfolio directory
+* Open language selector directory
 * Open index.html in your browser
 
 ## Known Bugs
