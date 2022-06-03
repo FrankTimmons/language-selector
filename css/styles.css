@@ -29,7 +29,7 @@ h1 {
   height: auto;
 }
 
-.col-6 p {
+p {
   background-color: white;
   padding: 5px;
   box-sizing: border-box;
@@ -72,4 +72,15 @@ h1 {
   float: left;
   width: 30%;
   margin-right: 10px;
+}
+
+.languageText{
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  height: auto;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  height: 300px;
 }
