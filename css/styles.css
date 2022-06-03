@@ -5,9 +5,6 @@
 #finalQuestion {
   display: none;
 }
-/* form {
-  float: left;
-} */
 
 h1 {
   text-align: center;
@@ -56,4 +53,11 @@ h1 {
   text-align: center;
   border: dotted black;
   font-weight: bolder;
+}
+
+.arrowRight {
+  position: relative;
+  text-align: right;
+  height: 15px;
+  display: none;
 }

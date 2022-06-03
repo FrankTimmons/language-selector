@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $("#button1").click(function() {
+    // $(".arrowRight").toggle();
+    $( ".arrowRight" ).toggle().animate({ "left": "+=450px" }, "slow" );
+    $( ".arrowRight" ).delay(5000).toggle();
+  });
   $("form#languageSelector").submit(function(event) {
     event.preventDefault();
     const q1 = $("input:radio[name=q1]:checked").val();
