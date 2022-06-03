@@ -24,9 +24,17 @@ $(document).ready(function() {
     }else if(q2 === "python"){
       python += 2;
     }
-    
+    cSharp = addAnswer(cSharp, q3);
+    swift = addAnswer(swift, q4);
+    python = addAnswer(python, q5);
+
     console.log(swift);
     console.log(python);
     console.log(cSharp);
+    
   });
 });
+
+function addAnswer(currentVal, answerVal) {
+  return currentVal + answerVal;
+}
